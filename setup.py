@@ -23,8 +23,8 @@ def setup_a(module_name):
     subprocess.run('python -m pip install --upgrade pip') 
   
     # commanding terminal to pip install 
-    subprocess.run('pip3 install '+module_name) 
-  # p = ..
+    p = subprocess.run('pip3 install '+module_name) 
+    
     # internet off 
     if(p.returncode == 1 and connect() == False): 
         print("error!! occured check\nInternet conection") 
@@ -55,6 +55,6 @@ print('Installing')
 print('Please wait....')
 print('Do not close this program')
 for package in package_q:
-    setup_b(package)
+    setup_a(package)
 print('Installation finished')
 subprocess.run('python main.py')
