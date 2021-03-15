@@ -17,7 +17,7 @@ def connect(host='https://google.com/'):
         return False
 package_q = ['ursina','pynput']
 
-def main(module_name): 
+def setup_a(module_name): 
   
     # updating pip to latest version 
     subprocess.run('python -m pip install --upgrade pip') 
@@ -36,10 +36,25 @@ def main(module_name):
     # Name of module wrong 
     elif(p.returncode == 1 and connect() == True): 
         print("error!! occured check\nName of module") 
+
+def setup_b(module_name):
+    b = subprocess.run('python3 -m pip install -r requirements.txt')
+    
+    if(b.returncode == 1 and connect() == False): 
+        print("error!! occured check\nInternet conection") 
+  
+    # Every thing worked fine 
+    elif(b.returncode == 0): 
+        print("It worked", module_name, " is installed") 
+  
+    # Name of module wrong 
+    elif(b.returncode == 1 and connect() == True): 
+        print("error!! occured check\nName of module")
+
 print('Installing')
 print('Please wait....')
 print('Do not close this program')
 for package in package_q:
-    main(package)
+    setup_b(package)
 print('Installation finished')
 subprocess.run('python main.py')
