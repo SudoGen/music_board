@@ -15,8 +15,7 @@
 
 
 `python main.py` \# For running the program
-###### Click on blocks and explore the program
-###### Enjoy The Music
+> Click on blocks and explore the program | Enjoy The Music
 
 #### Minimum Hardware Requirements
 - RAM: 2gb DDR4
