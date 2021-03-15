@@ -23,8 +23,8 @@ def setup_a(module_name):
     subprocess.run('python -m pip install --upgrade pip') 
   
     # commanding terminal to pip install 
-    p = subprocess.run('pip3 install '+module_name) 
-  
+    subprocess.run('pip3 install '+module_name) 
+  # p = ..
     # internet off 
     if(p.returncode == 1 and connect() == False): 
         print("error!! occured check\nInternet conection") 
@@ -36,7 +36,7 @@ def setup_a(module_name):
     # Name of module wrong 
     elif(p.returncode == 1 and connect() == True): 
         print("error!! occured check\nName of module") 
-
+'''
 def setup_b(module_name):
     b = subprocess.run('python3 -m pip install -r requirements.txt')
     
@@ -50,7 +50,7 @@ def setup_b(module_name):
     # Name of module wrong 
     elif(b.returncode == 1 and connect() == True): 
         print("error!! occured check\nName of module")
-
+'''
 print('Installing')
 print('Please wait....')
 print('Do not close this program')
