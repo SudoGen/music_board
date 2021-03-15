@@ -17,7 +17,7 @@
 `python main.py` \# For running the program
 > Click on blocks and explore the program | Enjoy The Music
 
-#### Minimum Hardware Requirements
+#### Minimum Hardware and Software Requirements
 - RAM: 2gb DDR4
 - Processor: i3 9th gen 
 - Python Version: Tested on 3.7+
