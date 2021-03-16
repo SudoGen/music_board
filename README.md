@@ -10,7 +10,7 @@
 --> The sample music has been obtained from various free sources , from University of Lowa Electronic Music Studios , and some samples have been extracted from various other Games.**
 ******
 
-### Setup
+## Setup
 `python setup.py` \# For setup
 
 
