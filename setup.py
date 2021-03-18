@@ -1,11 +1,10 @@
-import sys
-# importing subprocess module 
+import sys 
 import subprocess 
 import os
 # importing urllib.requests for internet cheking funtions 
 import urllib.request 
   
-# initializing host to gfg. 
+# To check if the system is connected to the internet
 def connect(host='https://google.com/'):
     # trying to open gfg 
     try: 
@@ -15,14 +14,14 @@ def connect(host='https://google.com/'):
     # trying to catch exception when internet is not ON. 
     except: 
         return False
-package_q = ['ursina','pynput']
+package_q = ['ursina==3.4.0','pynput==1.7.3']
 
 def setup_a(module_name): 
   
     # updating pip to latest version 
     subprocess.run('python -m pip install --upgrade pip') 
   
-    # commanding terminal to pip install 
+    # commanding terminal to pip install required modules
     p = subprocess.run('pip3 install '+module_name) 
     
     # internet off 
@@ -35,7 +34,10 @@ def setup_a(module_name):
   
     # Name of module wrong 
     elif(p.returncode == 1 and connect() == True): 
-        print("error!! occured check\nName of module") 
+        print("error!! occured check\nName of module")
+
+# USE setup_b if the setup_a does not work
+# setup_b is used to get the names of the modules from the requirements.txt      
 '''
 def setup_b(module_name):
     b = subprocess.run('python3 -m pip install -r requirements.txt')
@@ -54,7 +56,7 @@ def setup_b(module_name):
 print('Installing')
 print('Please wait....')
 print('Do not close this program')
-for package in package_q:
+for package in package_q:#sending module names to the setup_a funtion
     setup_a(package)
 print('Installation finished')
-subprocess.run('python main.py')
+subprocess.run('python main.py')#to run the main.py file
