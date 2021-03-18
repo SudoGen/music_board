@@ -116,7 +116,7 @@ class Button_Entity(Button):
 
         self.file_number = file_number
         self.collider = 'box'
-        self.audio = f"audio_{file_number}/row {self.row}.wav"
+        self.audio = f"audio_files/audio_{file_number}/row {self.row}.wav"
 
         self.count_x = 0
 
@@ -140,10 +140,10 @@ class Button_Entity(Button):
             self.color = color.black66
         if key == 's':
             self.file_number += 1
-            self.audio = f"audio_{self.file_number}/row {self.row}.wav"
+            self.audio = f"audio_files/audio_{self.file_number}/row {self.row}.wav"
         if key == 'd':
             self.file_number = self.initial_file_number
-            self.audio = f"audio_{self.file_number}/row {self.row}.wav"
+            self.audio = f"audio_files/audio_{self.file_number}/row {self.row}.wav"
 
 
 # creating button entities in a grid and assigning their behaviour on click
