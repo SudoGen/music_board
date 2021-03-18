@@ -23,7 +23,7 @@ player1 = Entity(model='quad', name='Entity1', color=color.black33, position=(-.
 reload_button = Button(parent=scene,
                        color=color.white,
                        position=(-2.9, 9.5),scale=(1.2,1.2),
-                       texture=load_texture('reload_image.png'))  # Colour defines colour of button on click
+                       texture=load_texture('images/reload_image.png'))  # Colour defines colour of button on click
 instrument = 1
 limit = 5  # Default instrumet = 1#limit should be 1+ of original limit
 change_file = Button(parent=scene, position=(-2.9, 8.2), scale=(1, 1),
@@ -80,7 +80,7 @@ def reload_on_click():
 reload_button.on_click = reload_on_click
 
 # This describes the background
-bg = Entity(parent=scene, model='quad',position=(3, 4), scale=(14.4, 16), z=10, texture=load_texture('background/bg_1.jpg'), collider='box')
+bg = Entity(parent=scene, model='quad',position=(3, 4), scale=(14.4, 16), z=10, texture=load_texture('images/bg_1.jpg'), collider='box')
 background = 1
 limit_bg = 6  # Default background = 1#limit should be 1+ of original limit
 
