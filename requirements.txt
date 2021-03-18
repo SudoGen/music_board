@@ -1,2 +1,2 @@
-ursina
-pynput
+ursina==3.4.0
+pynput==1.7.3
