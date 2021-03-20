@@ -1,3 +1,7 @@
+
+
+
+
 # Music Board
 ## A Musical Instrument App
 ### Made in Python
@@ -17,6 +21,7 @@
 `python main.py` \# For running the program
 > Click on blocks and explore the program | Enjoy The Music
 ### Sample Video
+[Click Here](https://user-images.githubusercontent.com/62838631/111860570-74910100-896e-11eb-9144-7e7194c2df05.mp4)
 
 ### Sample Screenshots
 ![Screenshot_81](https://user-images.githubusercontent.com/62838631/111273376-c1689500-8659-11eb-8057-8666af38ca02.png)
