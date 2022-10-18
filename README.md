@@ -30,10 +30,7 @@ python main.py
 
 <details>
 	<summary><h3>Sample Screenshots<h3></summary>
-	<p><img alt="Sample Image 1" src="https://user-images.githubusercontent.com/62838631/111273376-c1689500-8659-11eb-8057-8666af38ca02.png"/></p>
-	<p><img alt="Sample Image 2" src="https://user-images.githubusercontent.com/62838631/111273386-c3325880-8659-11eb-946a-caaf48a01123.png/></p>
-	<p><img alt="Sample Image 3" src="https://user-images.githubusercontent.com/62838631/111273393-c62d4900-8659-11eb-9ac8-66fe3fd3e88a.png"/></p>
-	<p><img alt="Sample Image 4" src="https://user-images.githubusercontent.com/62838631/111273398-c88fa300-8659-11eb-9d82-96dcedc67998.png"/></p>
+	<p><img alt="All images combined" src="https://user-images.githubusercontent.com/96513736/196453395-4753774a-7fd7-4bdf-9aa3-4ce0fab7b1ad.png"/></p>
 </details>
 
 #### Minimum Hardware and Software Requirements
